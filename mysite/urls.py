@@ -14,14 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from polls import views
+from django.urls import path, include
+# from polls import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('polls/', views.index, name='index'),
-    path('polls/<int:question_id>/', views.detail, name='detail'),
-    path('polls/<int:question_id>/results/', views.results, name='results'),
-    path('polls/<int:question_id>/vote/', views.vote, name='vote'),
+    # path('polls/', views.index, name='index'),
+    # path('polls/<int:question_id>/', views.detail, name='detail'),
+    # path('polls/<int:question_id>/results/', views.results, name='results'),
+    # path('polls/<int:question_id>/vote/', views.vote, name='vote'),
+
+    # URLconf 모듈을 계층적으로 구성하는 것이 변경도, 확장도, 재사용도 용이
+    path('polls/', include('polls.urls')),
 ]
