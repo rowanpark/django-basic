@@ -27,4 +27,5 @@ urlpatterns = [
 
     # URLconf 모듈을 계층적으로 구성하는 것이 변경도, 확장도, 재사용도 용이
     path('polls/', include('polls.urls')),
+    path('books/', include('books.urls'))
 ]
