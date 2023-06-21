@@ -9,7 +9,7 @@ class BooksModelaView(TemplateView):
     template_name = 'books/index.html'
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = super().get_context_data(**kwargs)  # get_context_data() 메소드를 정의할 때 반드시 첫 줄에 super() 메소드 호출
         context['model_list'] = ['Book', 'Author', 'Publisher']
         return context
 
