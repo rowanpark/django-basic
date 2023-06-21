@@ -4,6 +4,7 @@ from django.views.generic import DetailView
 from books.models import Book, Author, Publisher
 
 
+# TemplateView
 class BooksModelaView(TemplateView):
     template_name = 'books/index.html'
 
@@ -13,6 +14,7 @@ class BooksModelaView(TemplateView):
         return context
 
 
+# ListView
 class BookList(ListView):
     model = Book
 
@@ -25,6 +27,7 @@ class PublisherList(ListView):
     model = Publisher
 
 
+# DetailView
 class BookDetail(DetailView):
     model = Book
 
