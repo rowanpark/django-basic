@@ -35,8 +35,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls.apps.PollsConfig',  # 추가
-    'books.apps.BooksConfig',  # 추가
+
+    'polls.apps.PollsConfig',
+    # 'books.apps.BooksConfig',
+    'books',  # django 3.2.19 기준, '모듈명'으로 등록해도 '설정 클래스'로 등록한 것과 결과 같음
 ]
 
 MIDDLEWARE = [
