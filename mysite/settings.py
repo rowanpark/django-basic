@@ -123,7 +123,8 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# 추가 : 로깅 설정
+# 로깅 설정
+# 장고의 디폴트 설정을 유지하면서 로깅 설정함
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
