@@ -1,0 +1,2 @@
+[04/Jul/2023 17:09:45] DEBUG [polls.views:47] vote().question_id: 7
+[04/Jul/2023 17:11:32] DEBUG [polls.views:47] vote().question_id: 7
