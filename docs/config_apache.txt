@@ -1,0 +1,38 @@
+* apache(httpd) 설정 파일 위치: /usr/local/etc/httpd/httpd.conf
+
+
+
+* 포트: 8080 -> 80
+>>>
+#Listen 8080
+Listen 80
+
+
+
+* WSGI 설정
+>>>
+# WSGI config
+LoadModule wsgi_module "/usr/local/lib/httpd/modules/mod_wsgi-py37.cpython-37m-darwin.so"
+#WSGIPythonHome "/Users/renee_dev/mydev/hanbit/source/RedBook/ch3/venv"
+
+WSGIScriptAlias / /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/mysite/wsgi.py
+
+# Embeded mode
+#WSGIPythonHome /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/venv
+#WSGIPythonPath /Users/renee_dev/mydev/hanbit/source/RedBook/ch3
+
+# Daemon mode
+WSGIDaemonProcess mygroup python-home=/Users/renee_dev/mydev/hanbit/source/RedBook/ch3/venv python-path=/Users/renee_dev/mydev/hanbit/source/RedBook/ch3
+WSGIProcessGroup mygroup
+
+<Directory /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/mysite>
+<Files wsgi.py>
+Require all granted
+</Files>
+</Directory>
+
+# Static file config
+Alias /static/ /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/www_dir/static/
+<Directory /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/www_dir/static>
+Require all granted
+</Directory>
