@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-vh!nz_f_aq#wa26r0ly7s%ci&3@@*j$#iwj@!ub!-1$bxeg6++
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['rowanpark.pythonanywhere.com', 'localhost', '127.0.0.1']
+# ALLOWED_HOSTS = ['rowanpark.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.0.15', 'localhost', '127.0.0.1']
 
 # Application definition
 
