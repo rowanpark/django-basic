@@ -1,0 +1,27 @@
+* nginx 설정 파일 위치: /usr/local/etc/nginx/nginx.conf
+
+
+
+* 포트: 8080 -> 8000
+>>>
+#Listen 8080
+Listen 8000
+
+
+
+* NGINX 설정
+location = /favicon.ico {
+    access_log off;
+    log_not_found off;
+}
+
+location /static/ {
+    root /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/www_dir;
+    #alias /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/www_dir/static/;
+}
+
+location / {
+    include /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/www_dir/uwsgi_params;
+    #uwsgi_pass 127.0.0.1:8001;
+    uwsgi_pass unix:///Users/renee_dev/mydev/hanbit/source/RedBook/ch3/www_dir/ch3.sock;
+}
