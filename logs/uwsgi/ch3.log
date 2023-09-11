@@ -72656,3 +72656,18 @@ announcing my loyalty to the Emperor...
 [pid: 17721|app: 0|req: 13/17] 127.0.0.1 () {58 vars in 1240 bytes} [Tue Sep  5 14:55:20 2023] GET /books/publisher/ => generated 748 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 166 bytes (2 switches on core 0)
 [pid: 17719|app: 0|req: 1/18] 127.0.0.1 () {58 vars in 1252 bytes} [Tue Sep  5 14:55:21 2023] GET /books/publisher/2 => generated 548 bytes in 40 msecs (HTTP/1.1 200) 5 headers in 166 bytes (2 switches on core 0)
 announcing my loyalty to the Emperor...
+...brutally killing workers...
+Mon Sep 11 09:28:10 2023 - received message 0 from emperor
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/uwsgi
+closing all non-uwsgi socket fds > 2 (max_fd = 10240)...
+found fd 3 mapped to socket 0 (/Users/renee_dev/mydev/hanbit/source/RedBook/ch3/www_dir/ch3.sock)
+running /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/venv/bin/uwsgi
+dyld[17685]: Library not loaded: /usr/local/opt/openssl@3/lib/libssl.3.dylib
+  Referenced from: <2F8C3A62-4EA4-3ED6-BEDF-FC141E5C57DA> /Users/renee_dev/mydev/hanbit/source/RedBook/ch3/venv/bin/uwsgi
+  Reason: tried: '/usr/local/opt/openssl@3/lib/libssl.3.dylib' (code signature in <FFA75E91-86E1-3F3E-8BDF-37ED77CC6176> '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' not valid for use in process: library load denied by system policy), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/openssl@3/lib/libssl.3.dylib' (no such file), '/usr/local/opt/openssl@3/lib/libssl.3.dylib' (code signature in <FFA75E91-86E1-3F3E-8BDF-37ED77CC6176> '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' not valid for use in process: library load denied by system policy), '/usr/local/lib/libssl.3.dylib' (code signature in <FFA75E91-86E1-3F3E-8BDF-37ED77CC6176> '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' not valid for use in process: library load denied by system policy), '/usr/lib/libssl.3.dylib' (no such file, not in dyld cache), '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' (code signature in <FFA75E91-86E1-3F3E-8BDF-37ED77CC6176> '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' not valid for use in process: library load denied by system policy), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' (no such file), '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' (code signature in <FFA75E91-86E1-3F3E-8BDF-37ED77CC6176> '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' not valid for use in process: library load denied by system policy), '/usr/local/lib/libssl.3.dylib' (code signature in <FFA75E91-86E1-3F3E-8BDF-37ED77CC6176> '/usr/local/Cellar/openssl@3/3.1.2/lib/libssl.3.dylib' not valid for use in process: library load denied by system policy), '/usr/lib/libssl.3.dylib' (no such file, not in dyld cache)
