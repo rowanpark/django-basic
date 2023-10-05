@@ -18,9 +18,14 @@
 ## 웹 서버 연동
 ### 1. apache2(http) 설정
 * 'mysite/settings.py' 수정
+  - ALLOWED_HOST 변수 수정
+  - STATIC_ROOT 변수 추가<br/>
+    `$ python manage.py collectstatic`
 * apache(httpd) 설정 파일 수정<br/>
-  \- 위치: /usr/local/etc/httpd/httpd.conf<br/>
-  \- 참고: 'docs/config_apache.txt'
+  - 위치: /usr/local/etc/httpd/httpd.conf<br/>
+  - 참고: 'docs/config_apache.txt'
 
 ### 2. nginx 설정
-* 
+* nginx 설정 파일 수정<br/>
+  - 위치: /usr/local/etc/nginx/nginx.conf<br/>
+  - 참고: 'docs/config_nginx.txt'
